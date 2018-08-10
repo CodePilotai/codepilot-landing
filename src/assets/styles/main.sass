@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900')
+
+@tailwind preflight
+@tailwind components
+
+body
+  @apply text-black
+  overflow-x: hidden
+
+strong
+  @apply font-black
+
+.link
+  @apply text-white no-underline text-lg ml-12 font-bold
+
+.title
+  @apply uppercase text-xs font-black
+  letter-spacing: 1px
+
+.paragraph
+  @apply mb-6 text-2xl
+
+.button
+  @apply px-5 py-3 text-white rounded mr-4 mb-4 font-black
+  min-width: 130px
+
+.button-secondary
+  @apply bg-pink
+
+  &:hover
+    @apply bg-pink-light
+
+.button-primary
+  @apply bg-indigo
+
+  &:hover
+    @apply bg-indigo-light
+
+.button-white
+  @apply bg-white text-black
+
+  &:hover
+    @apply bg-grey-lighter
+
+.button-dark
+  @apply bg-black
+
+  &:hover
+    @apply bg-grey-darker
+
+.dt
+  @apply text-xl font-black text-white mb-2
+
+.dd
+  @apply text-lg text-white mb-4
+
+@tailwind utilities
