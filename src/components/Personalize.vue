@@ -4,7 +4,7 @@
       Personalize your results
     </h2>
     <div class="flex items-center mt-16">
-      <div class="w-2/5 text-right mr-8">
+      <div class="w-2/5 text-right mr-32">
         <img class="profile-switch-img" src="../assets/profile-switch.png" alt="Developer profile switcher">
       </div>
       <div class="w-3/5">
@@ -33,9 +33,9 @@
         <img class="sources-img" src="../assets/source-images.png" alt="Developer profile switcher">
       </div>
     </div>
-    <div class="flex mt-32 relative">
+    <div class="flex mt-32 relative pb-32">
       <div class="w-1/4 mr-8 relative">
-        <img class="absolute pin-r docs-img" src="../assets/docs-left.png" alt="Developer profile switcher">
+        <img class="absolute docs-img" style="right: 100px;" src="../assets/docs-left.png" alt="Developer profile switcher">
       </div>
       <div class="w-1/2 py-16">
         <p class="title text-green">More than 100 docs to pick from.</p>

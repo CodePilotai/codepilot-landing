@@ -11,7 +11,7 @@
           </p>
           <p class="paragraph mb-8">
             <strong class="font-black">
-              Powered by Machine Learning
+              Powered by Machine Learning.
             </strong>
           </p>
           <button type="button" class="button button-secondary">

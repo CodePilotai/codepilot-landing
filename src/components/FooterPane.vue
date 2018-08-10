@@ -12,7 +12,7 @@
           <p class="title text-pink">IMPROVE YOUR DEVELOPMENT EXPERIENCE</p>
           <h3 class="text-5xl mb-4">Start searching with CodePilot </h3>
         </div>
-        <div class="ml-8">
+        <div class="ml-32">
           <button
             type="button" name="button"
             class="button button-secondary m-0"
