@@ -29,12 +29,12 @@
             <img class="mr-5" src="../assets/windows-logo.png" alt="Available for Microsoft Windows">
             <img class="mr-5" src="../assets/ubuntu-logo.png" alt="Available for Linux">
           </div>
-          <div class="mt-8 bg-white rounded p-3 inline-block powered-container">
+          <div class="mt-8 bg-white rounded p-3 powered-container">
             <p class="title text-grey mb-2">Powered by</p>
             <div class="flex items-center">
-              <img class="powered-logo mr-4" src="../assets/github-logo.png" alt="GitHub logo">
-              <img class="powered-logo mr-4" src="../assets/searchcode-logo.png" alt="Searchcode logo">
-              <img class="powered-logo" src="../assets/stack-overflow-logo.png" alt="Stack Overflow logo">
+              <img class="powered-logo mr-6" src="../assets/github-logo.png" alt="GitHub logo">
+              <img class="powered-logo mr-6" src="../assets/searchcode-logo.png" alt="Searchcode logo">
+              <img class="powered-logo mb-2" src="../assets/stack-overflow-logo.png" alt="Stack Overflow logo">
             </div>
           </div>
         </div>

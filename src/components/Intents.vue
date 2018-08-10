@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="w-3/5 text-center">
-          <img class="intent-img" src="../assets/code-intent.jpg" alt="Code intent results">
+          <img src="../assets/code-intent.jpg" alt="Code intent results">
         </div>
       </div>
       <div v-if="activeIntent === 'Learn'" key="Learn" class="flex mt-12 items-center">
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="w-3/5 text-center">
-          <img class="intent-img" src="../assets/code-intent.jpg" alt="Code intent results">
+          <img src="../assets/code-intent.jpg" alt="Code intent results">
         </div>
       </div>
     </transition>
@@ -78,15 +78,9 @@ export default {
 .intent-source-img
   max-height: 34px
 
-.intent-img
-  transition: transform .5s
-
 .fade-enter-active, .fade-leave-active
   transition: opacity .3s
 
 .fade-enter, .fade-leave-to
   opacity: 0
-
-  .intent-img
-    transform: scale(0)
 </style>
