@@ -1,9 +1,10 @@
 <template lang="html">
   <div class="filters-bg">
-    <div class="container mx-auto py-32 px-4">
+    <div class="container mx-auto py-16 md:py-32 px-4">
       <div class="flex mb-4 items-center flex-col md:flex-row">
         <div class="w-full w-1/2">
           <img
+            data-rellax-speed="-0.5"
             alt="CodePilot.ai App"
             src="../assets/filters-screenshot.jpg"
             class="md:max-w-none filters-img md:mr-8 mb-8"
@@ -41,7 +42,17 @@
 </template>
 
 <script>
+import Rellax from 'rellax'
+
 export default {
+  mounted () {
+    if (this.$el.clientWidth > 768) {
+      Rellax('.filters-img', {
+        vertical: true,
+        center: true
+      })
+    }
+  }
 }
 </script>
 
@@ -49,6 +60,7 @@ export default {
 .filters-bg
   background-image: linear-gradient(180deg, #F3516E 0%, #FF2F54 92%)
   margin-top: 150px
+  position: relative
 
   &:before
     content: ''
@@ -56,6 +68,9 @@ export default {
     border-width: 0 0 5vh 100vw
     border-color: transparent transparent #F3516E transparent
     margin-top: -5vh
+
+    @media (max-width: 768px)
+      top: 1px
 
   &:after
     content: ''

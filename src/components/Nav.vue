@@ -24,7 +24,7 @@
         />
       </button>
       <div
-        class="mobile-nav bg-white fixed pin-t pin-x flex flex-col pr-16"
+        class="mobile-nav bg-white fixed pin-t pin-x flex flex-col pr-16 md:invisible"
         :class="{ 'is-open': isOpenMenu }"
       >
         <a class="mobile-link" href="/">About</a>

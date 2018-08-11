@@ -42,6 +42,7 @@
         </div>
         <div class="w-full md:w-3/5 mb-8">
           <img
+            data-rellax-speed="-1"
             alt="CodePilot.ai App"
             src="../assets/app-sample.jpg"
             class="md:max-w-none hero-img md:ml-8"
@@ -53,7 +54,17 @@
 </template>
 
 <script>
+import Rellax from 'rellax'
+
 export default {
+  mounted () {
+    if (this.$el.clientWidth > 768) {
+      Rellax('.hero-img', {
+        vertical: true,
+        center: true
+      })
+    }
+  }
 }
 </script>
 
