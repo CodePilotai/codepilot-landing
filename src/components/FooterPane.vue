@@ -1,18 +1,12 @@
 <template lang="html">
-  <div>
-    <div class="container mx-auto mt-32">
-      <div class="flex items-center justify-around">
-        <img src="../assets/ca-banner.png" alt="Code intent results">
-        <img src="../assets/startup-school-banner.png" alt="Code intent results">
-      </div>
-    </div>
-    <div class="container mx-auto mt-32">
-      <div class="flex items-center justify-center">
+  <div class="w-full relative bg-grey-lightest">
+    <div class="container mx-auto py-32 px-4">
+      <div class="flex items-center flex-col md:flex-row">
         <div>
           <p class="title text-pink">IMPROVE YOUR DEVELOPMENT EXPERIENCE</p>
-          <h3 class="text-5xl mb-4">Start searching with CodePilot </h3>
+          <h3 class="header">Start searching with CodePilot </h3>
         </div>
-        <div class="ml-32">
+        <div class="md:ml-32">
           <button
             type="button" name="button"
             class="button button-secondary m-0"
@@ -22,7 +16,13 @@
         </div>
       </div>
     </div>
-    <div class="bg-grey-lightest">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-around flex-col md:flex-row">
+        <img src="../assets/ca-banner.png" alt="Code intent results">
+        <img src="../assets/startup-school-banner.png" alt="Code intent results">
+      </div>
+    </div>
+    <div class="bg-grey-lightest px-4">
       <div class="container mx-auto mt-32 pt-4 pb-6 items-center flex">
         <img src="../assets/codepilot-logo-dark.png" alt="CodePilot logo">
         <span class="uppercase text-grey pt-2 pl-4">– All rights reserved</span>

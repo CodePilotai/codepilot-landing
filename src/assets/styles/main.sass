@@ -3,9 +3,13 @@
 @tailwind preflight
 @tailwind components
 
-body
+$md: 'min-width: 768px'
+
+body, html
   @apply text-black
-  overflow-x: hidden
+
+  @media (min-width: 768px)
+    overflow: hidden
 
 strong
   @apply font-black
@@ -17,12 +21,26 @@ strong
   @apply uppercase text-sm font-black mb-1
   letter-spacing: 1px
 
+.header
+  @apply text-3xl mb-4 font-black
+
+  @media ($md)
+    @apply text-5xl
+
 .paragraph
-  @apply mb-6 text-2xl leading-tight
+  @apply mb-6 text-lg leading-normal
+
+  @media ($md)
+    @apply text-2xl leading-tight
 
 .button
-  @apply px-5 py-3 text-white rounded mr-4 mb-4 font-black
+  @apply px-5 py-3 text-white rounded mb-4 font-black w-full text-center no-underline
   min-width: 130px
+  box-shadow: 0 4px 14px 0px rgba(#000, .25)
+  transition: background-color .1s ease
+
+  @media ($md)
+    @apply inline-block w-auto mx-2
 
 .button-secondary
   @apply bg-pink

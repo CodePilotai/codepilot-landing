@@ -5,7 +5,7 @@
       'navigation-white': hasBackground
     }"
   >
-    <div class="container mx-auto flex justify-between h-16 items-center">
+    <div class="container mx-auto flex justify-between h-16 items-center px-4">
       <a class="logo" href="/">
         <img :src="logoVariant" alt="CodePilot.ai Logo">
       </a>

@@ -1,10 +1,12 @@
 <template>
-  <div id="app" class="">
+  <div id="app" class="parallax">
     <Nav/>
     <Hero/>
     <Intents/>
     <Filters/>
     <Personalize/>
+    <CustomSources/>
+    <Docs/>
     <FooterPane/>
   </div>
 </template>
@@ -16,6 +18,8 @@ import Intents from './components/Intents.vue'
 import Filters from './components/Filters.vue'
 import Personalize from './components/Personalize.vue'
 import FooterPane from './components/FooterPane.vue'
+import Docs from './components/Docs.vue'
+import CustomSources from './components/CustomSources.vue'
 
 export default {
   name: 'app',
@@ -25,15 +29,26 @@ export default {
     Intents,
     Filters,
     Personalize,
-    FooterPane
+    FooterPane,
+    Docs,
+    CustomSources
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+<style lang="sass">
+#app
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+@media (min-width: 768px)
+  .parallax
+    position: relative
+    height: 100vh
+    overflow-x: hidden
+    overflow-y: auto
+    perspective: 2px
+    -webkit-overflow-scrolling: touch
+    scroll-behavior: smooth
 </style>

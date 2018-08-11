@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="hero-bg">
-    <div class="container mx-auto py-32">
-      <div class="flex mb-4 items-center">
-        <div class="w-2/5 text-white">
-          <h1 class="text-5xl mb-4 font-black">
+    <div class="container mx-auto py-32 px-4">
+      <div class="flex mb-4 items-center flex-col-reverse md:flex-row">
+        <div class="w-full md:w-2/5 text-white">
+          <h1 class="header">
             The Search Tool for Software Developers
           </h1>
           <p class="paragraph">
@@ -14,12 +14,14 @@
               Powered by Machine Learning.
             </strong>
           </p>
-          <button type="button" class="button button-secondary">
-            Get CodePilot
-          </button>
-          <button type="button" class="button button-white">
-            Learn More
-          </button>
+          <div class="flex">
+            <button type="button" class="button button-secondary mr-2 ml-0">
+              Get CodePilot
+            </button>
+            <a href="#intents" class="button button-white ml-2">
+              Learn More
+            </a>
+          </div>
           <p class="paragraph text-sm">
             Now <strong>FREE</strong> for private and commercial use!
           </p>
@@ -31,18 +33,18 @@
           </div>
           <div class="mt-8 bg-white rounded p-3 powered-container">
             <p class="title text-grey mb-2">Powered by</p>
-            <div class="flex items-center">
+            <div class="flex items-center flex-wrap">
               <img class="powered-logo mr-6" src="../assets/github-logo.png" alt="GitHub logo">
               <img class="powered-logo mr-6" src="../assets/searchcode-logo.png" alt="Searchcode logo">
               <img class="powered-logo mb-2" src="../assets/stack-overflow-logo.png" alt="Stack Overflow logo">
             </div>
           </div>
         </div>
-        <div class="w-3/5">
+        <div class="w-full md:w-3/5 mb-8">
           <img
             alt="CodePilot.ai App"
             src="../assets/app-sample.jpg"
-            class="ml-16 max-w-none hero-img"
+            class="md:max-w-none hero-img md:ml-8"
           >
         </div>
       </div>
@@ -56,9 +58,6 @@ export default {
 </script>
 
 <style lang="sass">
-.max-w-none
-  max-width: none
-
 .hero-bg
   background-image: linear-gradient(-180deg, #778DEA 0%, #4457A7 80%)
 
@@ -68,12 +67,12 @@ export default {
     border-color: transparent #4457A7 transparent transparent
 
 .hero-img
-  margin-left: 30px
   box-shadow: 0 25px 40px 0 rgba(0,0,0,0.20)
   border-radius: 6px
 
 .powered-logo
   max-height: 32px
+  margin-bottom: 0.5rem
 
 .powered-container
   box-shadow: 0 3px 13px 0 rgba(0,0,0,0.15)
