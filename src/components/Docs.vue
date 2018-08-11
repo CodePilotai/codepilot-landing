@@ -22,7 +22,7 @@
       <p class="title text-yellow">More than 100 docs to pick from.</p>
       <h3 class="header">Browse Documentation</h3>
       <p class="paragraph">
-        Access documentation for your selected languages, frameworks and tooling.
+        Get quick access to multiple documentation for selected languages, frameworks and tooling that match your current <strong>Developer Profile</strong>.
       </p>
       <p class="paragraph">
         Powered by <strong>DevDocs.io</strong>.

@@ -1,4 +1,5 @@
 <template lang="html">
+<div>
   <div class="w-full relative bg-grey-lightest">
     <div class="container mx-auto py-32 px-4">
       <div class="flex items-center flex-col md:flex-row">
@@ -17,19 +18,22 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="w-full relative bg-grey-lighter">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-around flex-col md:flex-row">
         <img class="w-4/5 md:w-1/2 mb-8" src="../assets/ca-banner.png" alt="Code intent results">
         <img class="w-4/5 md:w-1/2 mb-8" src="../assets/startup-school-banner.png" alt="Code intent results">
       </div>
     </div>
-    <div class="bg-grey-lightest px-4">
-      <div class="container mx-auto mt-16 pt-4 pb-6 items-center flex">
+    <div class="px-4">
+      <div class="container mx-auto pt-4 pb-6 items-center flex">
         <img src="../assets/codepilot-logo-dark.png" alt="CodePilot logo">
-        <span class="uppercase text-grey pt-2 pl-4">– All rights reserved</span>
+        <span class="uppercase text-grey-dark pt-2 pl-4">– All rights reserved</span>
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>

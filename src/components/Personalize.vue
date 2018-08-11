@@ -5,10 +5,10 @@
         Personalize your results
       </h2>
       <div class="flex items-center py-8 md:py-32 flex-col md:flex-row">
-        <div class="w-full md:w-2/5 text-right mr-32">
-          <img class="profile-switch-img" src="../assets/profile-switch.png" alt="Developer profile switcher">
+        <div class="w-full md:w-3/5 -ml-8">
+          <img class="profile-switch-img mr-32" src="../assets/dev-profile.png" alt="Developer profile">
         </div>
-        <div class="w-full md:w-3/5 pt-8">
+        <div class="w-full md:w-2/5 pt-8">
           <img class="mb-2" src="../assets/case-icon.svg">
           <p class="title text-indigo">Personalize your experience.</p>
           <h3 class="header">Create Developer Profiles</h3>
@@ -31,6 +31,6 @@ export default {
 
 <style lang="sass">
 .profile-switch-img
-  box-shadow: 0 25px 40px 0 rgba(0,0,0,0.20)
-  border-radius: 5px
+  max-width: none
+  margin-left: -8px
 </style>
