@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="parallax">
+  <div id="app">
     <Nav/>
     <Hero/>
     <Intents/>
@@ -22,7 +22,7 @@ import Docs from './components/Docs.vue'
 import CustomSources from './components/CustomSources.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     Hero,
     Nav,
@@ -41,14 +41,4 @@ export default {
   font-family: 'Lato', Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
-@media (min-width: 768px)
-  .parallax
-    position: relative
-    height: 100vh
-    overflow-x: hidden
-    overflow-y: auto
-    perspective: 2px
-    -webkit-overflow-scrolling: touch
-    scroll-behavior: smooth
 </style>

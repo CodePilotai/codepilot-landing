@@ -8,14 +8,14 @@ $md: 'min-width: 768px'
 body, html
   @apply text-black
 
-  @media (min-width: 768px)
-    overflow: hidden
-
 strong
   @apply font-black
 
 .link
   @apply text-white no-underline text-sm ml-6 font-bold uppercase tracking-wide
+
+.mobile-link
+  @apply text-black no-underline text-base font-bold uppercase p-4
 
 .title
   @apply uppercase text-sm font-black mb-1
@@ -31,7 +31,7 @@ strong
   @apply mb-6 text-lg leading-normal
 
   @media ($md)
-    @apply text-2xl leading-tight
+    @apply text-xl leading-tight
 
 .button
   @apply px-5 py-3 text-white rounded mb-4 font-black w-full text-center no-underline

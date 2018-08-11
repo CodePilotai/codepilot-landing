@@ -9,24 +9,44 @@
       <a class="logo" href="/">
         <img :src="logoVariant" alt="CodePilot.ai Logo">
       </a>
-      <div class="flex">
+      <div class="hidden md:flex">
         <a class="link" href="/">About</a>
         <a class="link" href="/">Release Notes</a>
         <a class="link" href="/">Blog</a>
+      </div>
+      <button
+        type="button"
+        class="button-fake md:hidden z-10 p-2"
+        @click="toggleMenu"
+      >
+        <MenuIcon
+          :fill="hasBackground || isOpenMenu ? '#000' : '#fff'"
+        />
+      </button>
+      <div
+        class="mobile-nav bg-white fixed pin-t pin-x flex flex-col pr-16"
+        :class="{ 'is-open': isOpenMenu }"
+      >
+        <a class="mobile-link" href="/">About</a>
+        <a class="mobile-link" href="/">Release Notes</a>
+        <a class="mobile-link" href="/">Blog</a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import MenuIcon from './MenuIcon'
 let lastScrollPosition = 0
 let ticking = false
 
 export default {
   name: 'Nav',
+  components: { MenuIcon },
   data () {
     return {
-      hasBackground: false
+      hasBackground: false,
+      isOpenMenu: false
     }
   },
   mounted () {
@@ -54,6 +74,9 @@ export default {
 
         ticking = true
       }
+    },
+    toggleMenu () {
+      this.isOpenMenu = !this.isOpenMenu
     }
   }
 }
@@ -71,4 +94,15 @@ export default {
 
     .link
       color: #3C4150
+
+.button-fake
+  background: none
+  border: none
+
+.mobile-nav
+  transition: transform .2s ease
+  transform: translateY(-100%)
+
+.is-open
+  transform: translateY(0)
 </style>

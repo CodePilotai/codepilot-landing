@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="w-full md:w-1/2 text-right md:mr-8 mb-4">
-        <img class="sources-img" src="../assets/source-images.png" alt="Developer profile switcher">
+        <img class="sources-img rounded-lg" src="../assets/custom-sources.png" alt="Developer profile switcher">
       </div>
     </div>
   </div>
@@ -27,4 +27,6 @@ export default {
 </script>
 
 <style lang="sass">
+.sources-img
+  box-shadow: 0 25px 40px 0 rgba(0,0,0,0.20)
 </style>
