@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="w-full relative bg-grey-lighter">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto pt-8 px-4">
       <div class="flex items-center justify-around flex-col md:flex-row">
         <img class="w-4/5 md:w-1/2 mb-8" src="../assets/ca-banner.png" alt="Code intent results">
         <img class="w-4/5 md:w-1/2 mb-8" src="../assets/startup-school-banner.png" alt="Code intent results">
