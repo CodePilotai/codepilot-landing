@@ -17,7 +17,8 @@
             Specialized Filters for<br/>tailored results
           </h1>
           <p class="paragraph">
-            You can now filter <strong>GitHub</strong> results based on the libraries the project depends on. Similar API syntax is no longer an issue to worry when searching for code.
+            You can now filter <strong>GitHub</strong> results based on the libraries the project depends on.
+            Similar API syntax is no longer an issue to worry when searching for code.
           </p>
           <p class="paragraph text-base">
             Only available for <strong>JavaScript</strong> projects that use a package.json file to declare their dependencies.<br/>

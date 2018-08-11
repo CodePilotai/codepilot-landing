@@ -42,7 +42,7 @@
           <img
             alt="CodePilot.ai App"
             src="../assets/app-sample.jpg"
-            class="max-w-none hero-img"
+            class="ml-16 max-w-none hero-img"
           >
         </div>
       </div>
