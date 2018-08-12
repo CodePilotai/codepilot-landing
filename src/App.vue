@@ -1,13 +1,14 @@
 <template>
   <div id="app">
+    <DownloadForm :is-open="isDownloadFormOpen" @close="isDownloadFormOpen = false"/>
     <Nav/>
-    <Hero/>
+    <Hero @open-download="isDownloadFormOpen = true"/>
     <Intents/>
     <Filters/>
     <Personalize/>
     <CustomSources/>
     <Docs/>
-    <FooterPane/>
+    <FooterPane @open-download="isDownloadFormOpen = true"/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Personalize from './components/Personalize.vue'
 import FooterPane from './components/FooterPane.vue'
 import Docs from './components/Docs.vue'
 import CustomSources from './components/CustomSources.vue'
+import DownloadForm from './components/DownloadForm'
 
 export default {
   name: 'App',
@@ -31,7 +33,13 @@ export default {
     Personalize,
     FooterPane,
     Docs,
-    CustomSources
+    CustomSources,
+    DownloadForm
+  },
+  data () {
+    return {
+      isDownloadFormOpen: false
+    }
   }
 }
 </script>

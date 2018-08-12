@@ -15,10 +15,13 @@
             </strong>
           </p>
           <div class="flex">
-            <button type="button" class="button button-large button-secondary mr-2 ml-0">
+            <button
+              type="button"
+              class="button button-large button-secondary mr-2 ml-0"
+              @click="$emit('open-download')"
+            >
               Get CodePilot
             </button>
-            <!-- <DownloadForm/> -->
           </div>
           <p class="paragraph text-sm">
             Now <strong>FREE</strong> for private and commercial use!
@@ -52,10 +55,7 @@
 </template>
 
 <script>
-import DownloadForm from './DownloadForm'
-
 export default {
-  components: { DownloadForm }
 }
 </script>
 

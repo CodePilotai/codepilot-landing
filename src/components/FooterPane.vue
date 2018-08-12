@@ -12,6 +12,7 @@
           <button
             type="button" name="button"
             class="button button-secondary button-large m-0 mt-8 md:mt-12"
+            @click="$emit('open-download')"
           >
             Download Now
           </button>

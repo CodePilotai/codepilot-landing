@@ -15,7 +15,7 @@
         {{ intent }}
       </button>
     </div>
-    <transition name="fade" mode="out-in">
+    <transition name="slide" mode="out-in">
       <div v-if="allActive || activeIntent === 'Code'" key="Code" class="flex mt-12 items-center flex-col md:flex-row">
         <div class="md:w-2/5 text-left">
           <p class="title text-sm text-indigo mb-2">
@@ -153,12 +153,12 @@ export default {
   margin-bottom: 1rem
   max-height: 70px
 
-.fade-enter-active, .fade-leave-active
+.slide-enter-active, .slide-leave-active
   transition: transform .5s
 
-.fade-enter,
+.slide-enter,
   transform: translateX(-150%)
-.fade-leave-to
+.slide-leave-to
   transform: translateY(150%)
 
 .intent-img-container
