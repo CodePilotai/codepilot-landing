@@ -7,7 +7,7 @@
             The Search Tool for Software Developers
           </h1>
           <p class="paragraph">
-            Search multiple sources at once and find solutions to your coding problems. Code examplse, issues, questions, docs –everything at your fingertips.
+            Search multiple sources at once and find solutions to your coding problems. Code examples, issues, questions, docs – everything at your fingertips.
           </p>
           <p class="paragraph mb-8">
             <strong class="font-black">
@@ -15,12 +15,9 @@
             </strong>
           </p>
           <div class="flex">
-            <button type="button" class="button button-secondary mr-2 ml-0">
+            <button type="button" class="button button-large button-secondary mr-2 ml-0">
               Get CodePilot
             </button>
-            <a href="#intents" class="button button-white ml-2">
-              Learn More
-            </a>
           </div>
           <p class="paragraph text-sm">
             Now <strong>FREE</strong> for private and commercial use!
@@ -44,8 +41,8 @@
           <img
             data-rellax-speed="-1"
             alt="CodePilot.ai App"
-            src="../assets/app-sample.jpg"
-            class="md:max-w-none hero-img md:ml-8"
+            src="../assets/app-sample.png"
+            class="rellax md:max-w-none hero-img md:ml-8"
           >
         </div>
       </div>
@@ -54,18 +51,7 @@
 </template>
 
 <script>
-import Rellax from 'rellax'
 
-export default {
-  mounted () {
-    if (this.$el.clientWidth > 768) {
-      Rellax('.hero-img', {
-        vertical: true,
-        center: true
-      })
-    }
-  }
-}
 </script>
 
 <style lang="sass">

@@ -2,15 +2,15 @@
 <div class="relative">
   <div class="pin docs-bg">
     <picture
-      data-rellax-speed="-2.5"
-      class="rellax"
+      data-rellax-speed="-3"
+      class="docs-parallax"
     >
       <source media="(min-width: 768px)" srcset="../assets/docs-1.png"/>
       <img src="../assets/docs-left.png">
     </picture>
     <picture
-      data-rellax-speed="-1.5"
-      class="rellax"
+      data-rellax-speed="-2"
+      class="docs-parallax"
     >
       <source media="(min-width: 768px)" srcset="../assets/docs-2.png"/>
       <img src="../assets/docs-right.png">
@@ -37,7 +37,7 @@ import Rellax from 'rellax'
 
 export default {
   mounted () {
-    Rellax('.rellax', {
+    Rellax('.docs-parallax', {
       vertical: true,
       center: true
     })
@@ -52,7 +52,7 @@ export default {
 .docs-bg
   position: absolute
 
-.rellax
+.docs-parallax
   z-index: -1
   position: absolute
   margin: 0 auto

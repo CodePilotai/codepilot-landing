@@ -7,7 +7,7 @@
             data-rellax-speed="-0.5"
             alt="CodePilot.ai App"
             src="../assets/filters-screenshot.jpg"
-            class="md:max-w-none filters-img md:mr-8 mb-8"
+            class="rellax md:max-w-none filters-img md:mr-8 mb-8"
           >
         </div>
         <div class="w-full w-1/2 text-white">
@@ -42,18 +42,6 @@
 </template>
 
 <script>
-import Rellax from 'rellax'
-
-export default {
-  mounted () {
-    if (this.$el.clientWidth > 768) {
-      Rellax('.filters-img', {
-        vertical: true,
-        center: true
-      })
-    }
-  }
-}
 </script>
 
 <style lang="sass">

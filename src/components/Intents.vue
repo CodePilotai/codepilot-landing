@@ -16,17 +16,17 @@
       </button>
     </div>
     <transition name="fade" mode="out-in">
-      <div v-if="activeIntent === 'Code'" key="Code" class="flex mt-12 items-center flex-col md:flex-row">
+      <div v-if="allActive || activeIntent === 'Code'" key="Code" class="flex mt-12 items-center flex-col md:flex-row">
         <div class="md:w-2/5 text-left">
           <p class="title text-sm text-indigo mb-2">
             Code Intent
           </p>
-          <h2 class="header">Search for code,<br/>get real examples</h2>
+          <h2 class="header">Search for code,<br/>get real examples.</h2>
           <p class="paragraph">
             Trying this new library? Looking for some projects that use it? Wondering how other projects implement the feature you’re working on?
           </p>
           <p class="paragraph">
-            We got you covered.
+            Use <strong>code</strong> as query for best results.
           </p>
           <p class="title text-grey">
             Code sources
@@ -37,17 +37,27 @@
           </div>
         </div>
         <div class="md:w-3/5 text-center">
-          <img src="../assets/code-intent.jpg" alt="Code intent results">
+          <img
+            src="../assets/code-intent.png"
+            alt="Code intent results"
+            class="rounded-full"
+          >
         </div>
       </div>
-      <div v-if="activeIntent === 'Learn'" key="Learn" class="flex mt-12 items-center flex-col md:flex-row">
+      <div v-if="allActive || activeIntent === 'Learn'" key="Learn" class="flex mt-12 items-center flex-col md:flex-row">
         <div class="md:w-2/5 text-left">
-          <p class="title text-sm text-indigo mb-2">
+          <p class="title text-indigo mb-2">
             Learn Intent
           </p>
-          <h2 class="header">Having questions?<br/>We got the answers.</h2>
+          <h2 class="header">Got a question?<br/>We got the answer.</h2>
           <p class="paragraph">
-            Trouble implementing a feature? Ask the question and CodePilot will look through Stack Overflow and other sources to find the most fitting answer based on your developer profile.
+            Trouble implementing a feature? Ask the question and CodePilot will look through Stack Overflow and other sources to find the most fitting materials based on your developer profile.
+          </p>
+          <p class="paragraph">
+            CodePilot will also look for <strong>Pull Requests</strong> and <strong>Commits</strong> that might have implemented that feature.
+          </p>
+          <p class="paragraph">
+            Use <strong>natural language</strong> as query for best results.
           </p>
           <p class="title text-grey">
             Learning sources
@@ -59,17 +69,21 @@
           </div>
         </div>
         <div class="md:w-3/5 text-center">
-          <img src="../assets/code-intent.jpg" alt="Code intent results">
+          <img
+            class="intent-img rounded-full"
+            src="../assets/learn-intent.png"
+            alt="Learn intent results"
+          >
         </div>
       </div>
-      <div v-if="activeIntent === 'Errors'" key="Errors" class="flex mt-12 items-center flex-col md:flex-row">
-        <div class="w-2/5 text-left">
-          <p class="title text-sm text-indigo mb-2">
+      <div v-if="allActive || activeIntent === 'Errors'" key="Errors" class="flex mt-12 items-center flex-col md:flex-row">
+        <div class="md:w-2/5 text-left">
+          <p class="title text-indigo mb-2">
             Errors Intent
           </p>
           <h2 class="header">Having problems?<br/>Let’s look into it.</h2>
           <p class="paragraph">
-            Trouble implementing a feature? Ask the question and CodePilot will look through Stack Overflow and other sources to find the most fitting answer based on your developer profile.
+            Stuck with an error? Describe the issue and CodePilot might find a solution for your problem.
           </p>
           <p class="title text-grey">
             Learning sources
@@ -77,11 +91,33 @@
           <div class="flex py-2 items-center flex-wrap-row mb-8">
             <img class="intent-source-img mr-4" src="../assets/stack-overflow-logo.png" alt="Stack Overflow logo">
             <img class="intent-source-img mr-4" src="../assets/github-logo.png" alt="GitHub logo">
-            <img class="intent-source-img" src="../assets/youtube-logo.png" alt="YouTube logo">
           </div>
         </div>
         <div class="md:w-3/5 text-center">
-          <img src="../assets/code-intent.jpg" alt="Code intent results">
+          <img src="../assets/error-intent.png" alt="Errors intent results" class="rounded-full">
+        </div>
+      </div>
+      <div v-if="allActive || activeIntent === 'Docs'" key="Docs" class="flex mt-12 items-center flex-col md:flex-row">
+        <div class="md:w-2/5 text-left">
+          <p class="title text-indigo mb-2">
+            Docs Intent
+          </p>
+          <h2 class="header">Sometimes all you need are the docs.</h2>
+          <p class="paragraph">
+            By default we will serve you the content from the awesome <strong>DevDocs.io</strong> based on your <strong>Developer Profile</strong>. You can also use the <strong>Custom Sources</strong> to add your own sources, like your company guidelines or project documentation.
+          </p>
+          <p class="paragraph">
+            Use <strong>code</strong> as query for best results.
+          </p>
+          <p class="title text-grey">
+            Learning sources
+          </p>
+          <div class="flex py-2 items-center flex-wrap-row mb-8">
+            <img class="devdocs-icon-img mr-4" src="../assets/devdocs-logo.png" alt="Stack Overflow logo">
+          </div>
+        </div>
+        <div class="md:w-3/5 text-center">
+          <img src="../assets/docs-intent.png" alt="Docs intent results" class="rounded-full">
         </div>
       </div>
     </transition>
@@ -98,8 +134,12 @@ export default {
         'Errors',
         'Docs'
       ],
-      activeIntent: 'Code'
+      activeIntent: 'Code',
+      allActive: true
     }
+  },
+  mounted () {
+    this.allActive = false
   }
 }
 </script>
@@ -109,9 +149,21 @@ export default {
   max-height: 34px
   margin-bottom: 1rem
 
-.fade-enter-active, .fade-leave-active
-  transition: opacity .3s
+.devdocs-icon-img
+  margin-bottom: 1rem
+  max-height: 70px
 
-.fade-enter, .fade-leave-to
-  opacity: 0
+.fade-enter-active, .fade-leave-active
+  transition: transform .5s
+
+.fade-enter,
+  transform: translateX(-150%)
+.fade-leave-to
+  transform: translateY(150%)
+
+.intent-img-container
+  max-width: 500px
+  max-height: 500px
+  box-shadow: 0 25px 40px 0 rgba(0,0,0,0.20) inset
+  text-align: center
 </style>

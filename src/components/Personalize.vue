@@ -1,4 +1,4 @@
-<template lang="html">
+<template lang="html" functional>
   <div class="bg-white">
     <div class="container mx-auto mt-32 px-4">
       <h2 class="header text-center">
@@ -6,9 +6,12 @@
       </h2>
       <div class="flex items-center py-8 md:py-32 flex-col md:flex-row">
         <div class="w-full md:w-3/5 -ml-8">
-          <img class="profile-switch-img mr-32" src="../assets/dev-profile.png" alt="Developer profile">
+          <img
+            data-rellax-speed="0.5"
+            class="rellax md:max-w-none profile-switch-img" src="../assets/dev-profile.png" alt="Developer profile"
+          >
         </div>
-        <div class="w-full md:w-2/5 pt-8">
+        <div class="w-full md:w-2/5 pt-8 md:pl-4">
           <img class="mb-2" src="../assets/case-icon.svg">
           <p class="title text-indigo">Personalize your experience.</p>
           <h3 class="header">Create Developer Profiles</h3>
@@ -28,9 +31,3 @@
 export default {
 }
 </script>
-
-<style lang="sass">
-.profile-switch-img
-  max-width: none
-  margin-left: -8px
-</style>

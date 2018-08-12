@@ -19,7 +19,7 @@
       <div class="w-full md:w-1/2 text-right md:ml-8 mb-8">
         <img
           data-rellax-speed="0.5"
-          class="sources-img rounded-lg"
+          class="rellax sources-img rounded-lg"
           src="../assets/custom-sources.png"
           alt="Custom Sources Screenshot"
         >
@@ -30,18 +30,7 @@
 </template>
 
 <script>
-import Rellax from 'rellax'
 
-export default {
-  mounted () {
-    if (this.$el.clientWidth > 768) {
-      Rellax('.sources-img', {
-        vertical: true,
-        center: true
-      })
-    }
-  }
-}
 </script>
 
 <style lang="sass">

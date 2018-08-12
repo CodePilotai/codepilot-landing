@@ -1,17 +1,17 @@
 <template lang="html">
 <div>
-  <div class="w-full relative bg-grey-lightest">
+  <div class="w-full relative bg-indigo cta">
     <div class="container mx-auto py-32 px-4">
       <div class="flex items-center flex-col md:flex-row">
         <div>
           <img class="mb-2" src="../assets/speedo-icon.svg">
-          <p class="title text-pink">IMPROVE YOUR DEVELOPMENT EXPERIENCE</p>
-          <h3 class="header">Start searching with CodePilot </h3>
+          <p class="title text-yellow">IMPROVE YOUR DEVELOPMENT EXPERIENCE</p>
+          <h3 class="header text-white">Start searching with CodePilot </h3>
         </div>
         <div class="md:ml-32">
           <button
             type="button" name="button"
-            class="button button-secondary m-0 mt-8 md:mt-12"
+            class="button button-secondary button-large m-0 mt-8 md:mt-12"
           >
             Download Now
           </button>
@@ -37,9 +37,21 @@
 </template>
 
 <script>
+import Rellax from 'rellax'
+
 export default {
+  mounted () {
+    if (this.$el.clientWidth > 768) {
+      Rellax('.rellax', {
+        vertical: true,
+        center: true
+      })
+    }
+  }
 }
 </script>
 
 <style lang="sass">
+.cta
+  background-image: linear-gradient(155deg, #6883f5 0%, #495fb9 80%)
 </style>
