@@ -7083,10 +7083,11 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-cli-plugin-prerender-spa@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue-cli-plugin-prerender-spa/-/vue-cli-plugin-prerender-spa-1.0.0.tgz#47024f50f7c0ff20299028f67214714ce298ad8f"
+vue-cli-plugin-prerender-spa@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-prerender-spa/-/vue-cli-plugin-prerender-spa-1.0.1.tgz#585c5c9bf1a6b50f8d0269c39736c2109da128af"
   dependencies:
+    javascript-stringify "^1.6.0"
     prerender-spa-plugin "^3.2.1"
 
 vue-cli-plugin-tailwindcss@^0.1.1:
