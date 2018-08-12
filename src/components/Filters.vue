@@ -6,7 +6,7 @@
           <img
             data-rellax-speed="-0.5"
             alt="CodePilot.ai App"
-            src="../assets/filters-screenshot.jpg"
+            src="../assets/filters-screenshot.png"
             class="rellax md:max-w-none filters-img md:mr-8 mb-8"
           >
         </div>
