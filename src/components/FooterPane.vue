@@ -29,7 +29,7 @@
     </div>
     <div class="px-4">
       <div class="container mx-auto pt-4 pb-6 items-center flex">
-        <img src="../assets/codepilot-logo-dark.png" alt="CodePilot logo">
+        <img src="../assets/codepilot-logo-dark.png" alt="CodePilot logo" class="h-10">
         <span class="uppercase text-grey-dark pt-2 pl-4">– All rights reserved</span>
       </div>
     </div>

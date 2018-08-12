@@ -7,7 +7,7 @@
   >
     <div class="container mx-auto flex justify-between h-16 items-center px-4">
       <a class="logo" href="/">
-        <img :src="logoVariant" alt="CodePilot.ai Logo">
+        <img :src="logoVariant" alt="CodePilot.ai Logo" class="h-10">
       </a>
       <div class="hidden md:flex">
         <a class="link" href="/">About</a>
