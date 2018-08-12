@@ -42,7 +42,7 @@
                     required
                   />
                   <span class="pl-2">
-                    I agree to the End User License Agreement
+                    I agree to the <a class="link text-black capitalize m-0 p-0" href="https://codepilot.ai/privacy/" target="_blank">End User License Agreement</a>
                   </span>
                 </label>
               </div>
