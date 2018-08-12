@@ -25,7 +25,7 @@
                 type="submit"
                 id="mauticform_input_acceptlicense_submit"
                 name="mauticform[submit]"
-                value=""
+                value="1"
                 class="button mauticform-button"
               >
                 Submit
