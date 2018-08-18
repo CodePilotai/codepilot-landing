@@ -9,12 +9,15 @@
       <a class="logo" href="/">
         <img :src="logoVariant" alt="CodePilot.ai Logo" class="h-10">
       </a>
-      <div class="hidden md:flex">
-        <a class="link" href="/">About</a>
-        <a class="link" href="/">Release Notes</a>
-        <a class="link" href="/">Blog</a>
-      </div>
       <button
+        v-if="hasBackground"
+        type="button"
+        class="button button-primary m-0 ml-4 text-sm w-2/5 md:w-auto md:text-base"
+        @click="$emit('open-download')"
+      >
+        Get CodePilot
+      </button>
+      <!-- <button
         type="button"
         class="button-fake md:hidden z-10 p-2"
         @click="toggleMenu"
@@ -22,15 +25,15 @@
         <MenuIcon
           :fill="hasBackground || isOpenMenu ? '#000' : '#fff'"
         />
-      </button>
-      <div
+      </button> -->
+      <!-- <div
         class="mobile-nav bg-white fixed pin-t pin-x flex flex-col pr-16 md:invisible"
         :class="{ 'is-open': isOpenMenu }"
       >
         <a class="mobile-link" href="/">About</a>
         <a class="mobile-link" href="/">Release Notes</a>
         <a class="mobile-link" href="/">Blog</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -68,7 +71,7 @@ export default {
 
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          this.hasBackground = lastScrollPosition > 10
+          this.hasBackground = lastScrollPosition > 200
           ticking = false
         })
 

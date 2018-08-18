@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <DownloadForm :is-open="isDownloadFormOpen" @close="isDownloadFormOpen = false"/>
-    <Nav/>
+    <Nav @open-download="isDownloadFormOpen = true"/>
     <Hero @open-download="isDownloadFormOpen = true"/>
     <Intents/>
     <Filters/>
