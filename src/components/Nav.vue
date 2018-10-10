@@ -9,14 +9,14 @@
       <a class="logo" href="/">
         <img :src="logoVariant" alt="CodePilot.ai Logo" class="h-10">
       </a>
-      <button
+      <!-- <button
         v-if="hasBackground"
         type="button"
         class="button button-primary m-0 ml-4 text-sm w-2/5 md:w-auto md:text-base"
         @click="$emit('open-download')"
       >
         Get CodePilot
-      </button>
+      </button> -->
       <!-- <button
         type="button"
         class="button-fake md:hidden z-10 p-2"

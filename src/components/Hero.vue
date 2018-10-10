@@ -9,11 +9,7 @@
           <p class="paragraph">
             Search multiple sources at once and find solutions to your coding problems. Code examples, issues, questions, docs – everything at your fingertips.
           </p>
-          <p class="paragraph mb-8">
-            <strong class="font-black">
-              Powered by Machine Learning.
-            </strong>
-          </p>
+
           <div class="flex">
             <a
               href="https://github.com/CodePilotai/codepilot-vue"
