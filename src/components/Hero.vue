@@ -15,23 +15,17 @@
             </strong>
           </p>
           <div class="flex">
-            <button
-              type="button"
+            <a
+              href="https://github.com/CodePilotai/codepilot-vue"
+              target="_blank"
               class="button button-large button-secondary mr-2 ml-0"
-              @click="$emit('open-download')"
             >
-              Get CodePilot
-            </button>
+              GitHub
+            </a>
           </div>
           <p class="paragraph text-sm">
-            Now <strong>FREE</strong> for private and commercial use!
+            Now <strong>open-source</strong>!
           </p>
-          <p class="title mt-12">Available for</p>
-          <div class="flex items-center mt-2">
-            <img class="mr-5 pb-2" src="../assets/apple-logo.png" alt="Available for Appl Mac OS">
-            <img class="mr-5" src="../assets/windows-logo.png" alt="Available for Microsoft Windows">
-            <img class="mr-5" src="../assets/ubuntu-logo.png" alt="Available for Linux">
-          </div>
           <div class="mt-8 bg-white rounded p-3 powered-container">
             <p class="title text-grey mb-2">Powered by</p>
             <div class="flex items-center flex-wrap">
