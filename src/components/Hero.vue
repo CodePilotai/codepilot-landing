@@ -12,7 +12,7 @@
 
           <div class="flex">
             <a
-              href="https://github.com/CodePilotai/codepilot-vue"
+              href="https://github.com/CodePilotai/codepilot"
               target="_blank"
               class="button button-large button-secondary mr-2 ml-0"
             >
