@@ -20,7 +20,7 @@
             </a>
           </div>
           <p class="paragraph text-sm">
-            <strong>MIT Open Source!</strong>!
+            <strong>MIT Open Source!</strong>
           </p>
           <div class="mt-8 bg-white rounded p-3 powered-container">
             <p class="title text-grey mb-2">Powered by</p>
