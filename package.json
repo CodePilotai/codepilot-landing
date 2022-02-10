@@ -16,7 +16,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0",
     "@vue/cli-service": "^3.0.0",
     "@vue/eslint-config-standard": "^3.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "prerender-spa-plugin": "^3.2.1",
     "sass-loader": "^7.0.1",
     "tailwindcss": "^0.6.4",
